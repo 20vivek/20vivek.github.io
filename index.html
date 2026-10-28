@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Sahu | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Vivek Sahu — Full Stack Developer with PHP, Laravel, MySQL, and React experience" />
+  <!-- Fonts: Inter for UI, JetBrains Mono for code accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor (desktop only; disabled via JS on touch devices) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Home">VS<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1zhAkdfeWpKtxypFevfq8HbCO5Ojzdda_/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main id="content">
+
+    <!-- Hero -->
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="badge">Available for work</span>
+            <span class="badge">Open source contributor</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Hi, I'm <span class="gradient-text">Vivek Sahu</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            Full Stack Developer with 1+ year of experience building web applications and RESTful APIs with PHP, Laravel and MySQL, and frontend interfaces with HTML, CSS, JavaScript and React. I've delivered loan modules, customer forms and authentication workflows for an NBFC platform.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-large btn-gradient">View Projects</a>
+            <a href="https://drive.google.com/file/d/1zhAkdfeWpKtxypFevfq8HbCO5Ojzdda_/view?usp=drive_link" class="btn btn-large btn-outline" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://github.com/20vivek" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://leetcode.com/u/vivek_k_sahu/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+            <a href="https://www.linkedin.com/in/vivek-k-sahu" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <!-- Developer-inspired decorative element: terminal-style code block -->
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+              <span class="terminal-title">bash · portfolio.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="cmd-line"><span class="prompt">$</span> <span class="cmd">cat about_me.txt</span></div>
+              <div class="output">Full stack developer passionate about clean code.</div>
+              <div class="cmd-line cursor-typing"><span class="prompt">$</span> <span class="cmd" id="typewriter"></span><span class="blink">_</span></div>
+            </div>
+          </div>
+
+          <!-- Abstract CSS glow shapes -->
+          <div class="glow glow-1"></div>
+          <div class="glow glow-2"></div>
+          <div class="glow glow-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <p class="section-subtitle">A quick overview of my background and goals.</p>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="about-photo">
+            <div class="photo-placeholder">
+              <img src="assets/profile.jpg" alt="Profile photo placeholder">
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p class="lead">I'm Vivek Sahu, a Full Stack Developer with over 1 year of experience building web applications and RESTful APIs.</p>
+            <p>
+              I specialize in PHP, Laravel, and MySQL on the backend, and HTML, CSS, JavaScript, and React on the frontend.
+              I've delivered loan modules, customer application forms, and authentication workflows for an NBFC platform.
+              I enjoy working in Agile teams, using Git for version control, and applying strong fundamentals in Data Structures, OOP, and RDBMS to write clean, maintainable code.
+            </p>
+            <div class="about-facts">
+              <div class="fact">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Raipur, Chhattisgarh, India</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">Full Stack Web Development</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Status</span>
+                <span class="fact-value">Open to opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section bg-surface" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="skills-title">Skills</h2>
+          <p class="section-subtitle">Technologies I work with, grouped by category.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Populated by script.js from CONFIG.skills -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <p class="section-subtitle">Selected work with source code and live demos.</p>
+        </div>
+
+        <div class="project-filters reveal" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by script.js from CONFIG.projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section bg-surface" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="experience-title">Experience</h2>
+          <p class="section-subtitle">Professional journey and key roles.</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <!-- Populated by script.js from CONFIG.experience -->
+        </div>
+
+        <div class="empty-state reveal" id="experienceEmpty" style="display:none;">
+          <p>Experience details coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="education-title">Education</h2>
+          <p class="section-subtitle">Academic background.</p>
+        </div>
+
+        <div class="education-grid" id="educationGrid">
+          <!-- Populated by script.js from CONFIG.education -->
+        </div>
+
+        <div class="empty-state reveal" id="educationEmpty" style="display:none;">
+          <p>Education details coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section bg-surface" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="certifications-title">Certifications</h2>
+          <p class="section-subtitle">Verified credentials issued by recognized organizations.</p>
+        </div>
+
+        <div class="certs-grid" id="certsGrid">
+          <!-- Populated by script.js from CONFIG.certifications -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Activity -->
+    <section class="section" id="developer-activity" aria-labelledby="activity-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="activity-title">Developer Activity</h2>
+          <p class="section-subtitle">Connect with me on coding platforms.</p>
+        </div>
+
+        <div class="activity-cards reveal">
+          <a href="https://github.com/20vivek" target="_blank" rel="noopener" class="activity-card github">
+            <div class="activity-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C-0.858-1.02-2.35-0.01-2.35-0.01-2.094-0.262-1.428-0.18-1.428-0.18 1.016 0.088 1.528 0.13 1.528 0.13 2.048 0.18 2.634 0.38 2.634 0.38 4.12 0.51 5.88 1.35 6.64 1.95 6.83 2.93 4.98 4.58 4.29 5.29 6.99 5.91 7.41 8.75 11.91 10.72 11.91 12.53 10.72 14.81 14.81 14.81 17.36l2.11-1.65c0-.285.01-.52.01-.68 0-.57-.02-1.04-.02-1.88-3.18-.72-6.42-1.6-6.42-5.07 0-1.11.39-2.02 1.02-2.73 0 0 .84-.27 2.75 1.02 8.9-2.23 19.2-1.8 19.2-1.8 1.41.44 2.39 1.04 2.39 2.14 0 1.51-.02 2.73-.02 3.11 0 3.82 2.49 6.15 6.42 5.46 1.27.67 2.6 1 2.6 1 1.96-.58 3.28-1.77 3.28-3.64 0-2.02-1.54-3.68-4.06-4.54"/></svg>
+            </div>
+            <div class="activity-info">
+              <span class="activity-platform">GitHub</span>
+              <span class="activity-handle">@20vivek</span>
+            </div>
+          </a>
+
+          <a href="https://leetcode.com/u/vivek_k_sahu/" target="_blank" rel="noopener" class="activity-card leetcode">
+            <div class="activity-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="activity-info">
+              <span class="activity-platform">LeetCode</span>
+              <span class="activity-handle">vivek_k_sahu</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/vivek-k-sahu" target="_blank" rel="noopener" class="activity-card linkedin">
+            <div class="activity-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div class="activity-info">
+              <span class="activity-platform">LinkedIn</span>
+              <span class="activity-handle">vivek-k-sahu</span>
+            </div>
+          </a>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section bg-surface" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="contact-title">Contact</h2>
+          <p class="section-subtitle">Get in touch.</p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <div class="contact-card">
+              <span class="contact-label">Email</span>
+              <a href="mailto:2.0viveksahu@gmail.com" class="contact-value">2.0viveksahu@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917389147085" class="contact-value">+91-7389147085</a>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/vivek-k-sahu" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/vivek-k-sahu</a>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/20vivek" target="_blank" rel="noopener" class="contact-value">github.com/20vivek</a>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">Resume</span>
+              <a href="https://drive.google.com/file/d/1zhAkdfeWpKtxypFevfq8HbCO5Ojzdda_/view?usp=drive_link" target="_blank" rel="noopener" class="contact-value">View on Google Drive</a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required rows="5" placeholder="How can I help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient btn-large">Send Message</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">VS<span>.</span></div>
+        <p>Vivek Sahu. Built with HTML, CSS, and vanilla JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/20vivek" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/vivek-k-sahu" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://leetcode.com/u/vivek_k_sahu/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+      </div>
+
+      <div class="footer-copy">
+        <span id="year"></span> Vivek Sahu. All rights reserved.
+      </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 9 12 3 6 9"></polyline></svg>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
